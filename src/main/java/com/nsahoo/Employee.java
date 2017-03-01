@@ -49,4 +49,15 @@ public class Employee {
     public void setId(int id) {
         this.id = id;
     }
+
+    @Override public String toString()
+    {
+        final StringBuilder sb = new StringBuilder("Employee{");
+        sb.append("id=").append(id);
+        sb.append(", name='").append(name).append('\'');
+        sb.append(", age=").append(age);
+        sb.append(", city='").append(city).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
 }
